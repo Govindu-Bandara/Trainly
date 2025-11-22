@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Trainly",
+    "slug": "trainly",
+    "version": "1.0.0",
+    "orientation": "portrait",
+  "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+  "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Trainly needs access to your location to track your cardio workouts and show your route on the map.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Trainly needs access to your location to track your cardio workouts even when the app is in the background.",
+        "NSLocationAlwaysUsageDescription": "Trainly needs access to your location to track your cardio workouts even when the app is in the background."
+      },
+      "bundleIdentifier": "com.yourcompany.trainly"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ],
+      "package": "com.yourcompany.trainly"
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Trainly to use your location for workout tracking even when the app is in the background.",
+          "locationAlwaysPermission": "Allow Trainly to use your location for workout tracking even when the app is in the background.",
+          "locationWhenInUsePermission": "Allow Trainly to use your location to track your cardio workouts and show your route on the map.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true
+        }
+      ]
+    ],
+    "extra": {
+    }
+  }
+}
